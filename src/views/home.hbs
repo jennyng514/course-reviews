@@ -1,0 +1,34 @@
+<h2>All reviews</h2>
+
+<form method="GET">
+	 <div class="search">
+	    Semester: <input type="text" name="semesterQ">
+	    Year: <input type="number" name="yearQ">
+        Professor:  <input type="text" name="professorQ">
+	    <input type="submit" value="Filter">
+    </div>
+</form>
+
+<table>
+    <thead>
+        <th>Course Number</th>
+        <th>Course Name</th>
+        <th>Semester</th>
+        <th>Year</th>
+        <th>Professor</th>
+        <th>Review</th>
+    </thead>
+    <tbody>
+        {{#each review}}
+        <tr>
+            <td>{{courseNumber}}</td>
+            <td>{{courseName}}</td>
+            <td>{{semester}}</td>
+            <td>{{year}}</td>
+            <td>{{professor}}</td>
+            <td>{{review}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+

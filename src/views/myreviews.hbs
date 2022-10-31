@@ -1,0 +1,24 @@
+<h2>My reviews</h2>
+
+<table>
+    <thead>
+        <th>Course Number</th>
+        <th>Course Name</th>
+        <th>Semester</th>
+        <th>Year</th>
+        <th>Professor</th>
+        <th>Review</th>
+    </thead>
+    <tbody>
+        {{#each review}}
+        <tr>
+            <td>{{courseNumber}}</td>
+            <td>{{courseName}}</td>
+            <td>{{semester}}</td>
+            <td>{{year}}</td>
+            <td>{{professor}}</td>
+            <td>{{review}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
